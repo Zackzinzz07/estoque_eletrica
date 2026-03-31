@@ -1,0 +1,9 @@
+# Ignorar arquivos temporários do Python
+__pycache__/
+*.pyc
+
+# Ignorar o ambiente virtual (vamos criar ele no próximo passo)
+venv/
+
+# Ignorar arquivos temporários de testes
+.pytest_cache/
