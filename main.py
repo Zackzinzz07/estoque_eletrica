@@ -5,17 +5,17 @@ from src.estoque import (
     estoque_loja
 )
 
+__version__ = "1.0.0" 
 
 def exibir_menu():
-    print("\n" + "="*40)
-    print("  SISTEMA DE ESTOQUE - LOJA ELÉTRICA ")
-    print("="*40)
+    print("\n" + "="*45)
+    print(f" 📦 SISTEMA DE ESTOQUE - v{__version__} ") 
     print("1. Cadastrar novo produto")
     print("2. Listar produtos no estoque")
     print("3. Atualizar estoque (Venda/Recebimento)")
     print("4. Verificar alertas de estoque")
     print("5. Sair")
-    print("="*40)
+    print("="*45)
 
 
 def main():

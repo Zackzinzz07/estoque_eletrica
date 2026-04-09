@@ -2,7 +2,6 @@ estoque_loja = []
 
 
 def adicionar_produto(codigo, nome, qtd_atual, qtd_minima, custo, venda):
-    """Cadastra um novo produto no estoque."""
     for produto in estoque_loja:
         if produto["codigo"] == codigo:
             return f"Erro: Já existe um produto com o código '{codigo}'."
@@ -21,7 +20,6 @@ def adicionar_produto(codigo, nome, qtd_atual, qtd_minima, custo, venda):
 
 
 def atualizar_estoque(codigo, quantidade_mudanca):
-    """Atualiza a quantidade de um produto."""
     for produto in estoque_loja:
         if produto["codigo"] == codigo:
             produto["qtd_atual"] += quantidade_mudanca
@@ -32,7 +30,6 @@ def atualizar_estoque(codigo, quantidade_mudanca):
 
 
 def verificar_alertas():
-    """Retorna avisos para produtos zerados ou abaixo do mínimo."""
     alertas = []
     for produto in estoque_loja:
         if produto["qtd_atual"] == 0:
