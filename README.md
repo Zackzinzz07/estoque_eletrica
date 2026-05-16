@@ -1,4 +1,8 @@
-# 📦 Controle de Estoque - Loja de Elétrica
+# 📦 Sistema de Controle de Estoque - Loja de Elétrica
+
+[![CI do Estoque da Eletrica](https://github.com/Zackzinzz07/estoque_eletrica/actions/workflows/ci.yml/badge.svg)](https://github.com/Zackzinzz07/estoque_eletrica/actions/workflows/ci.yml)
+
+🌐 **Acesse a aplicação rodando online:** (https://replit.com/@salatielfreitas/estoqueeletrica)
 
 ## 🎯 Sobre o Projeto
 Este projeto é uma aplicação de linha de comando (CLI) desenvolvida para resolver um problema real de desorganização e falta de controle de estoque em lojas de materiais elétricos e de construção. 
