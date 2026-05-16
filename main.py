@@ -5,11 +5,22 @@ from src.estoque import (
     estoque_loja
 )
 
+from src.api import obter_cotacao_dolar
+
 __version__ = "1.0.0" 
 
 def exibir_menu():
     print("\n" + "="*45)
     print(f" 📦 SISTEMA DE ESTOQUE - v{__version__} ") 
+    print("="*45)
+    
+    cotacao = obter_cotacao_dolar()
+    if cotacao:
+        print(f" 💵 Cotação do Dólar Hoje: R$ {cotacao:.2f}")
+    else:
+        print(" 💵 Cotação do Dólar Hoje: Indisponível")
+    print("="*45)
+    
     print("1. Cadastrar novo produto")
     print("2. Listar produtos no estoque")
     print("3. Atualizar estoque (Venda/Recebimento)")
